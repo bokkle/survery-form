@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for helping us to improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name"
+          >Name:
+          <input id="name" type="text" placeholder="Enter your name" required
+        /></label>
+        <label id="email-label" for="email"
+          >Email:
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+        /></label>
+        <label id="number-label" for="number"
+          >Age (optional):
+          <input
+            id="number"
+            type="number"
+            min="12"
+            max="120"
+            placeholder="Enter your age"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown"
+          >Which option best represents your current role?
+          <select id="dropdown">
+            <option disabled selected hidden>(Select one)</option>
+            <option>Student</option>
+            <option>Employed (Full-Time)</option>
+            <option>Employed (Part-Time)</option>
+            <option>Prefer not to say</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="recommend-yes"
+          >Would you recommend us to a friend?<br /><input
+            id="recommend-yes"
+            type="radio"
+            value="yes"
+            name="recommend"
+            checked
+          />
+          Yes</label
+        >
+        <label for="recommend-no"
+          ><input id="recommend-no" type="radio" value="no" name="recommend" />
+          No</label
+        >
+        <label for="recommend-not-sure"
+          ><input
+            id="recommend-not-sure"
+            type="radio"
+            value="not-sure"
+            name="recommend"
+          />
+          Not sure</label
+        >
+      </fieldset>
+      <fieldset>
+        <p>What would you like to see improved? (check all that apply)</p>
+        <label>
+          <input id="improvements" type="checkbox" value="1" />
+          Front-End Projects
+        </label>
+        <label>
+          <input id="improvements" type="checkbox" value="2" />
+          Back-End Projects
+        </label>
+        <label>
+          <input id="improvements" type="checkbox" value="3" />
+          Data Visualization
+        </label>
+        <label>
+          <input id="improvements" type="checkbox" value="4" />
+          Challenges
+        </label>
+        <label>
+          <input id="improvements" type="checkbox" value="5" />
+          Discord Experience
+        </label>
+        <label>
+          <input id="improvements" type="checkbox" value="6" />
+          Videos
+        </label>
+        <label>
+          <input id="improvements" type="checkbox" value="7" />
+          Additional Courses
+        </label>
+        <label>
+          <input id="improvements" type="checkbox" value="8" />
+          City Meetups
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="suggestions"
+          >Any comments or suggestions?
+          <textarea id="suggestions" name="suggestions" rows="4" placeholder="Enter suggestions here"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

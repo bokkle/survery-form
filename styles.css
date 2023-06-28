@@ -1,0 +1,101 @@
+* {
+  /* border: 0; */
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: url(https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1,
+p#description {
+  text-align: center;
+  margin: 20px 0;
+  color: #f3f3f3;
+}
+
+p#description {
+  font-size: 18px;
+}
+
+form {
+  background-color: #1b1b32;
+  opacity: 0.95;
+  color: #f3f3f3;
+  width: 60vw;
+  min-width: 290px;
+  margin: 20px auto;
+  padding: 20px;
+  font-size: 18px;
+}
+
+fieldset {
+  border: none;
+  border-bottom: 1px solid cyan;
+}
+
+label {
+  display: block;
+  margin: 2px 0;
+}
+
+input {
+  display: block;
+  margin: 6px 0;
+}
+
+input#name,
+input#email,
+input#number,
+select#dropdown,
+textarea {
+  width: 100%;
+  font-size: 16px;
+}
+
+input[name="recommend"] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+input#improvements {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+input#submit {
+  margin: 20px auto 10px auto;
+  padding: 10px;
+  width: 30%;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: black;
+  border: 1px solid #1f575a;
+  border-radius: 5px;
+  color: #f3f3f3;
+  transition: all 300ms ease;
+}
+
+input#submit:hover {
+  background-color: #1f575a;
+  color: #f3f3f3;
+  cursor: pointer;
+}
+
+textarea, select#dropdown {
+    margin-top: 6px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    transform: scale(1.4);
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+input[value="1"] {
+    margin-top: 10px;
+}
